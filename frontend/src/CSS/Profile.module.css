@@ -1,0 +1,126 @@
+.profile-container {
+  padding: 40px;
+  background: #fda901;
+  min-height: 100vh;
+  position: fixed;
+  top: 64px;
+  right: 0;
+  width: 100%;
+  max-width: 400px;
+  z-index: 1001;
+  direction: rtl;
+  text-align: center;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.profile-loading {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 100px;
+}
+
+/* Close Button */
+.profile-closeBtn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #111827;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.profile-closeBtn:hover {
+  color: #ff0000;
+}
+
+.profile-header {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.profile-header p {
+  color: #555;
+  font-size: 14px;
+}
+
+.profile-header a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #2563eb;
+  font-weight: 600;
+  text-align: left;
+  word-break: break-all;
+}
+
+.profile-statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin-bottom: 20px;
+  direction: rtl;
+}
+
+.profile-card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.profile-card h3 {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #555;
+}
+
+.profile-card span {
+  font-size: 22px;
+  font-weight: bold;
+  color: #111827;
+}
+
+.profile-progress {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.profile-progress h2 {
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+.profile-progress table {
+  width: 100%;
+  border-collapse: collapse;
+  direction: rtl;
+  font-size: 14px;
+}
+
+.profile-progress th, .profile-progress td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.profile-progress th {
+  background: #f1f5f9;
+  font-weight: 600;
+}

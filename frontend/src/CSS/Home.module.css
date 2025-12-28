@@ -1,0 +1,270 @@
+/* ================= RESET ================= */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  min-height: calc(100vh - 56px);
+  margin-top: 70px;
+  padding: 12px;
+  position: relative;
+  background-color: #f8fafc;
+}
+
+/* ================= QUESTION CARD ================= */
+
+.questionCard {
+  background: #ffffff;
+  padding: 16px;
+  border-radius: 12px;
+  margin-right: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  margin-bottom: 16px;
+}
+
+.title {
+  font-size: 20px;
+  color: #ff9800;
+  margin-bottom: 8px;
+}
+
+.description1 {
+  font-size: 14px;
+  color: #1e293b;
+}
+
+.descrispan2 {
+  font-weight: 600;
+}
+
+.section {
+  margin-top: 14px;
+}
+
+.section h3,
+.section h5 {
+  margin-bottom: 6px;
+  color: #0f172a;
+}
+
+/* ================= EXPECTED OUTPUT TABLE ================= */
+
+.tableSection {
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 10px;
+}
+
+.table1 {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+}
+
+.table1 th,
+.table1 td {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.table1 th {
+  background-color: #0f172a;
+  color: #ffffff;
+}
+
+/* ================= MAIN CONTENT ================= */
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* ================= EDITOR ================= */
+
+.editor {
+  background-color: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.editorHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 6px;
+}
+
+.heading {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.editorHeader span {
+  cursor: pointer;
+  color: #64748b;
+}
+
+.textarea {
+  width: 100%;
+  height: 180px;
+  padding: 10px;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+  border-radius: 8px;
+  border: 1px solid #cbd5f5;
+  background-color: #f8fafc;
+  resize: none;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  background-color: #ffffff;
+}
+
+/* ================= BUTTONS ================= */
+
+.navbarUser {
+  display: flex;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.iconButton1,
+.iconButton2 {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-size: 14px;
+}
+
+.iconButton1 {
+  background-color: #f1f5f9;
+}
+
+.iconButton2 {
+  background-color: #2563eb;
+  color: #ffffff;
+}
+
+/* ================= RESULT ================= */
+
+.result {
+  background-color: #ffffff;
+  padding: 14px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.helpBtn{
+  font-style: none;
+  border: none;
+}
+.result h3 {
+  margin-bottom: 8px;
+  font-size: 15px;
+}
+
+.output {
+  height: 180px;
+  padding: 10px;
+  background-color: #0f172a;
+  color: #e5e7eb;
+  border-radius: 8px;
+  overflow: auto;
+  font-family: "Courier New", monospace;
+  font-size: 13px;
+}
+
+/* ================= RESULT TABLE ================= */
+
+.table {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.table table {
+  width: 100%;
+  min-width: 500px;
+  border-collapse: collapse;
+}
+
+.table th,
+.table td {
+  padding: 8px 10px;
+  border: 1px solid #334155;
+  font-size: 13px;
+  white-space: nowrap;
+}
+
+.table th {
+  background-color: #1e293b;
+  color: #ffffff;
+}
+
+/* ================= TABLET (≥768px) ================= */
+
+@media (min-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+
+  .textarea {
+    height: 200px;
+    font-size: 14px;
+  }
+
+  .output {
+    height: 200px;
+    font-size: 14px;
+  }
+}
+
+/* ================= DESKTOP (≥1024px) ================= */
+
+@media (min-width: 1024px) {
+  .container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .container > div {
+    width: 1200px;
+  }
+
+  .questionCard {
+    margin-bottom: 24px;
+  }
+
+  .mainContent {
+    gap: 20px;
+  }
+
+  .editor,
+  .result {
+    padding: 20px;
+  }
+
+  .textarea {
+    height: 220px;
+  }
+
+  .output {
+    height: 220px;
+  }
+}
